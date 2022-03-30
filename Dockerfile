@@ -4,7 +4,6 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
-RUN apt-get install rabbitmq
 RUN pip install --upgrade pip
 RUN pip3 install -r requirements.txt
 EXPOSE 8000
